@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover Event</title>
+</head>
+<body>
+    <button id="hoverButton">Hover over me</button>
+    <p id="messageParagraph"></p>
+
+    <script>
+        // Ambil elemen tombol dan paragraf
+        const button = document.getElementById('hoverButton');
+        const paragraph = document.getElementById('messageParagraph');
+
+        // Tambahkan event listener untuk mouseover pada tombol
+        button.addEventListener('mouseover', function() {
+            // Tampilkan pesan di dalam paragraf
+            paragraph.textContent = 'Mouse is over the button!';
+        });
+    </script>
+</body>
+</html>
